@@ -33,8 +33,78 @@ li a {
 ul li.DropDownIcon {
   display: none;
 }
+.firstSectionContainer{
+  margin: 0;
+  background: linear-gradient(hsl(120, 63%, 82%),hsl(120, 53%, 68%));
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
 
-/* Moble Responsive */
+}
+input{
+  font-size: 1rem;
+  border-radius: 3px;
+  width: 80%;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row::after{display: table;
+  clear: both;
+  content:""}
+
+iframe{
+  width: 100%;
+}
+/* ******************************Custom Styles****************************************** */
+.col-1{
+  width: 8.33%;
+}
+.col-2{
+  width: 16.66%;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.33%;
+}
+.col-5{
+  width: 41.66%;
+}
+.col-6{
+  width: 50%;
+}
+.col-7{
+  width: 58.33%;
+}
+.col-8{
+  width: 66.66%;
+}
+.col-9{
+  width: 75%;
+}.col-10{
+  width: 83.33%;
+}
+.col-11{
+  width: 91.66%;
+}
+.col-12{
+  width: 100%;
+}
+
+
+/******************************** Moble Responsive ***************************************/
 @media screen and (max-width: 680px) {
   ul li:not(:nth-child(1)) {
     display: none;
@@ -61,9 +131,9 @@ ul li.DropDownIcon {
     top:0;
     right:0;
   }
+  .col-6{
+    width: 100%;
+    padding-top: 10px;
+  }
 }
 
-.firstSection{
-  background-color: khaki;
-  height: 5rem;
-}
